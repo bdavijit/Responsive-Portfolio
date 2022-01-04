@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lobster", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.background-img1 {
+  background-image: url(images/top-banner.png);
+  background-repeat: no-repeat;
+}
+.background-img2 {
+  background-image: url(images/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.background-img3 {
+  background-image: url(images/exp-bg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.text-colour {
+  color: rgba(243, 49, 14, 0.712);
+}
+
+.text-box {
+  padding-top: 5%;
+}
+
+ h1 {
+  font-size: 200%;
+}
+ h3 {
+  font-size: 100%;
+}
+ p {
+  font-size: 70%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.button12 {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: linear-gradient(60deg, lightsalmon, rgb(255, 82, 52));
+
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 700;
+  
+  border: 0px;
+  border-radius: 5px;
+}
+
+.button12:hover{
+    box-shadow: 5px 7px 20px rgba(124, 116, 116, 0.493); 
+}
+
+.card {
+  margin: 5%;
+  padding: 2%;
+
+  background-color: rgba(204, 202, 202, 0.24);
+
+  box-shadow: 5px 7px 40px rgba(124, 116, 116, 0.493);
+  border-radius: 10px;
+
+  border-left: 13px solid;
+  border-image: linear-gradient(45deg, lightsalmon, tomato);
+  border-image-slice: 10;
+}
+div.card:hover, div.card:active {
+    box-shadow: 20px 15px 40px rgba(22, 17, 17, 0.246)
+}
+
+
+
+footer {
+  background: linear-gradient(45deg, lightsalmon, tomato);
+
+  text-align: center;
+  box-shadow: 5px 7px 40px rgba(124, 116, 116, 0.493);
+  color: aliceblue;
+}
+
+
+@media (max-width: 900px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 120%;
+    }
+     h3 {
+      font-size: 90%;
+    }
+     p {
+      font-size: 60%;
+    }
+  
+  }
